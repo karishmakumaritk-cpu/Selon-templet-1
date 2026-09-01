@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Premium salon website template built with HTML, CSS, and vanilla JavaScript",
   "scripts": {
-    "dev": "npx serve .",
-    "start": "npx serve .",
-    "build": "mkdir -p dist && cp -r *.html css js assets dist/ 2>/dev/null; cp README.md dist/ 2>/dev/null; echo 'Build complete'"
+    "dev": "node server.js",
+    "start": "node server.js",
+    "build": "mkdir -p dist && cp -r *.html css js server.js package.json dist/ 2>/dev/null || true"
   },
   "keywords": [
     "salon",
@@ -13,5 +13,8 @@
     "template",
     "static-site"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
 }

@@ -3,45 +3,112 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services & Pricing | Lumière Beauty Studio</title>
-  <meta name="description" content="Explore our full range of premium beauty services — hair styling, hair color, skin treatments, makeup, bridal packages, and nail care with transparent pricing.">
+  <title>Services & Treatments | Lumière Beauty Studio</title>
+  <meta name="description" content="Explore the bespoke service menu at Lumière Beauty Studio. Premium hair cuts, balayage, luxury facials, occasion makeup, pre-bridal packages, and nail artistry.">
+  <meta name="keywords" content="salon services, haircut prices, balayage Delhi, luxury facial, bridal makeup package, nail salon Delhi">
+
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Services & Pricing | Lumière Beauty Studio">
-  <meta property="og:description" content="Premium hair, skin, makeup, bridal, and nail services with transparent pricing.">
-  <meta property="og:image" content="https://images.pexels.com/photos/3993290/pexels-photo-3993290.jpeg?auto=compress&cs=tinysrgb&h=650&w=940">
-  <link rel="canonical" href="">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Ccircle cx='18' cy='18' r='16' fill='none' stroke='%23b08968' stroke-width='2'/%3E%3Ctext x='18' y='24' text-anchor='middle' font-family='serif' font-size='14' fill='%23b08968'%3EL%3C/text%3E%3C/svg%3E">
+  <meta property="og:title" content="Services & Treatments | Lumière Beauty Studio">
+  <meta property="og:description" content="Explore our curated beauty treatments: Hair styling & color, advanced facials, bridal preparation, and nail rituals.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=1200&q=80">
+  <meta property="og:url" content="">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Services & Treatments | Lumière Beauty Studio">
+  <meta name="twitter:description" content="Curated beauty rituals designed around your style and confidence.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Canonical URL Placeholder -->
+  <link rel="canonical" href="./services.html">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "name": "Lumière Beauty Studio",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Lumière Salon Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Hair Styling & Cut",
+            "description": "Precision haircut, luxury wash, blowout, and personalized styling."
+          },
+          "price": "800",
+          "priceCurrency": "INR"
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Balayage & Dimensional Color",
+            "description": "Freehand balayage, toner, gloss, and nourishing bond treatment."
+          },
+          "price": "4500",
+          "priceCurrency": "INR"
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Bridal Makeup",
+            "description": "Complete HD / Airbrush bridal makeup with luxury lashes and draping."
+          },
+          "price": "15000",
+          "priceCurrency": "INR"
+        }
+      ]
+    }
+  }
+  </script>
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="site-header" role="banner">
+  <!-- ========================== HEADER ========================== -->
+  <header class="site-header" id="siteHeader" role="banner">
     <div class="container">
       <div class="header-inner">
-        <a href="index.html" class="site-logo" aria-label="Lumière Beauty Studio Home">
+        <a href="./index.html" class="site-logo" aria-label="Lumière Beauty Studio Home">
           <span class="logo-mark">L</span>
           <span class="logo-text">
-            <span>Lumière</span>
-            <span>Beauty Studio</span>
+            <span class="logo-title">Lumière</span>
+            <span class="logo-subtitle">Beauty Studio</span>
           </span>
         </a>
-        <nav class="main-nav" role="navigation" aria-label="Main navigation">
+
+        <nav class="main-nav" role="navigation" aria-label="Primary navigation">
           <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html" class="active">Services</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./services.html" class="active">Services</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./contact.html">Contact</a></li>
           </ul>
         </nav>
+
         <div class="header-cta">
-          <button class="btn btn-accent btn-sm" data-booking-open>Book Appointment</button>
-          <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <button class="btn btn-accent btn-sm" data-booking-open id="headerBookBtn">Book Appointment</button>
+          <button class="hamburger" id="hamburgerBtn" aria-label="Toggle mobile menu" aria-expanded="false">
             <span></span><span></span><span></span>
           </button>
         </div>
@@ -49,453 +116,491 @@
     </div>
   </header>
 
-  <!-- MOBILE NAV -->
-  <div class="mobile-nav" role="navigation" aria-label="Mobile navigation">
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <button class="btn btn-accent" data-booking-open>Book Appointment</button>
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav" role="dialog" aria-label="Mobile Menu">
+    <div class="mobile-nav-links">
+      <a href="./index.html">Home</a>
+      <a href="./about.html">About</a>
+      <a href="./services.html" class="active">Services</a>
+      <a href="./gallery.html">Gallery</a>
+      <a href="./contact.html">Contact</a>
+    </div>
+    <div class="mobile-nav-footer">
+      <button class="btn btn-accent w-full" data-booking-open>Book Appointment</button>
+      <a href="https://wa.me/919999999999?text=Hi%20Lumi%C3%A8re%20Beauty%20Studio%2C%20I%20would%20like%20to%20book%20an%20appointment." class="btn btn-whatsapp w-full" data-whatsapp-btn>
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+      </a>
+    </div>
   </div>
-  <div class="mobile-overlay"></div>
+  <div class="mobile-overlay" id="mobileOverlay"></div>
 
-  <!-- PAGE HERO -->
-  <section class="page-hero">
-    <div class="container">
-      <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="index.html">Home</a><span>/</span>Services
-      </nav>
-      <h1 class="mt-sm">Our Services</h1>
-      <p class="text-muted">Thoughtfully curated treatments, designed around you.</p>
-    </div>
-  </section>
-
-  <!-- SERVICES -->
-  <section class="section">
-    <div class="container">
-
-      <!-- HAIR -->
-      <div class="service-category fade-in-up">
-        <div class="service-category-header">
-          <span class="category-icon"><i class="fas fa-cut"></i></span>
-          <h2>Hair</h2>
+  <main id="mainContent">
+    <!-- ========================== PAGE HERO ========================== -->
+    <section class="page-hero" id="servicesHero">
+      <div class="container">
+        <div class="page-hero-content">
+          <span class="eyebrow">OUR SERVICE MENU</span>
+          <h1>Thoughtfully Curated Treatments</h1>
+          <p>Explore our comprehensive beauty offerings, personalized consultations, and luxury salon packages designed for your confidence.</p>
         </div>
-        <div class="services-list">
-          <div class="service-item">
-            <div class="service-item-info">
-              <h4>Haircut & Styling</h4>
-              <p>Precision cuts and styling tailored to your face shape and lifestyle.</p>
+      </div>
+    </section>
+
+    <!-- ========================== DETAILED SERVICES MENU ========================== -->
+    <section class="section" id="serviceMenu">
+      <div class="container">
+
+        <!-- CATEGORY: HAIR -->
+        <div class="service-category-block" id="hair">
+          <div class="service-category-header">
+            <h2 class="service-category-title">Hair Design & Artistry</h2>
+            <span class="eyebrow">CUT • COLOR • SPA</span>
+          </div>
+
+          <div class="service-menu-list">
+            <!-- Haircut & Styling -->
+            <div class="service-menu-item">
+              <div class="service-menu-info">
+                <h4>Haircut & Styling</h4>
+                <p>Personalized consultation, bespoke haircut architecture, clarifying wash, and signature blow-dry styling.</p>
+              </div>
+              <div class="service-menu-right">
+                <span class="service-menu-price">Starting from ₹800</span>
+                <button class="btn btn-outline btn-sm" data-booking-open data-service="Haircut & Styling">Book</button>
+              </div>
             </div>
-            <div class="service-item-price">
-              <span class="price-from">Starting from</span>
-              <span class="price">&#8377; 800</span>
-              <button class="btn-book" data-booking-open>Book Now</button>
+
+            <!-- Blow Dry -->
+            <div class="service-menu-item">
+              <div class="service-menu-info">
+                <h4>Blow Dry & Texture</h4>
+                <p>Volumizing, sleek, or tousled wave blowout accompanied by a relaxing scalp massage and heat protectant elixir.</p>
+              </div>
+              <div class="service-menu-right">
+                <span class="service-menu-price">Starting from ₹500</span>
+                <button class="btn btn-outline btn-sm" data-booking-open data-service="Blow Dry">Book</button>
+              </div>
+            </div>
+
+            <!-- Hair Spa -->
+            <div class="service-menu-item">
+              <div class="service-menu-info">
+                <h4>Nourishing Hair Spa</h4>
+                <p>Intensive botanical repair mask, steam infusion, and acupressure head massage to restore vitality and gloss.</p>
+              </div>
+              <div class="service-menu-right">
+                <span class="service-menu-price">Starting from ₹1,200</span>
+                <button class="btn btn-outline btn-sm" data-booking-open data-service="Hair Spa">Book</button>
+              </div>
+            </div>
+
+            <!-- Hair Color -->
+            <div class="service-menu-item">
+              <div class="service-menu-info">
+                <h4>Global Hair Color</h4>
+                <p>Rich, luminous ammonia-free global root-to-tip color infusion with customized shade formulation and gloss seal.</p>
+              </div>
+              <div class="service-menu-right">
+                <span class="service-menu-price">Starting from ₹2,500</span>
+                <button class="btn btn-outline btn-sm" data-booking-open data-service="Hair Color">Book</button>
+              </div>
+            </div>
+
+            <!-- Balayage -->
+            <div class="service-menu-item">
+              <div class="service-menu-info">
+                <h4>Dimensional Balayage</h4>
+                <p>Hand-painted sun-kissed gradients, shadow root melting, customized toning, and deep plex bond reconstruction.</p>
+              </div>
+              <div class="service-menu-right">
+                <span class="service-menu-price">Starting from ₹4,500</span>
+                <button class="btn btn-outline btn-sm" data-booking-open data-service="Balayage">Book</button>
+              </div>
+            </div>
+
+            <!-- Highlights -->
+            <div class="service-menu-item">
+              <div class="service-menu-info">
+                <h4>Crown & Full Highlights</h4>
+                <p>Fine multi-foil baby lights or high-contrast ribbons designed to accentuate your natural movement and facial frame.</p>
+              </div>
+              <div class="service-menu-right">
+                <span class="service-menu-price">Starting from ₹3,000</span>
+                <button class="btn btn-outline btn-sm" data-booking-open data-service="Highlights">Book</button>
+              </div>
             </div>
           </div>
-          <div class="service-item">
-            <div class="service-item-info">
-              <h4>Blow Dry</h4>
-              <p>Professional blow-dry styling for a polished, voluminous finish.</p>
+        </div>
+
+        <!-- CATEGORY: SKIN -->
+        <div class="service-category-block" id="skin">
+          <div class="service-category-header">
+            <h2 class="service-category-title">Advanced Skincare & Facials</h2>
+            <span class="eyebrow">RENEW • NOURISH • GLOW</span>
+          </div>
+
+          <div class="service-menu-list">
+            <!-- Classic Facial -->
+            <div class="service-menu-item">
+              <div class="service-menu-info">
+                <h4>Classic Botanical Facial</h4>
+                <p>Gentle enzyme exfoliation, botanical steam, custom soothing mask, and rejuvenating lymphatic drainage massage.</p>
+              </div>
+              <div class="service-menu-right">
+                <span class="service-menu-price">Starting from ₹1,200</span>
+                <button class="btn btn-outline btn-sm" data-booking-open data-service="Classic Facial">Book</button>
+              </div>
             </div>
-            <div class="service-item-price">
-              <span class="price-from">Starting from</span>
-              <span class="price">&#8377; 500</span>
-              <button class="btn-book" data-booking-open>Book Now</button>
+
+            <!-- Glow Facial -->
+            <div class="service-menu-item">
+              <div class="service-menu-info">
+                <h4>Lumière Signature Glow Facial</h4>
+                <p>Multi-step brightening ritual utilizing stabilized Vitamin C, mild fruit peels, and gold peptide firming mask.</p>
+              </div>
+              <div class="service-menu-right">
+                <span class="service-menu-price">Starting from ₹1,800</span>
+                <button class="btn btn-outline btn-sm" data-booking-open data-service="Glow Facial">Book</button>
+              </div>
+            </div>
+
+            <!-- Deep Cleansing -->
+            <div class="service-menu-item">
+              <div class="service-menu-info">
+                <h4>Deep Cleansing & Detox</h4>
+                <p>Ultrasonic pore purification, blackhead extraction, charcoal clay detoxification, and pore-refining ice globes.</p>
+              </div>
+              <div class="service-menu-right">
+                <span class="service-menu-price">Starting from ₹1,500</span>
+                <button class="btn btn-outline btn-sm" data-booking-open data-service="Deep Cleansing">Book</button>
+              </div>
+            </div>
+
+            <!-- Hydration Treatment -->
+            <div class="service-menu-item">
+              <div class="service-menu-info">
+                <h4>Intense Hydration Treatment</h4>
+                <p>Deep hyaluronic acid micro-infusion, cooling biocellulose sheet mask, and barrier-repairing ceramide seal.</p>
+              </div>
+              <div class="service-menu-right">
+                <span class="service-menu-price">Starting from ₹2,200</span>
+                <button class="btn btn-outline btn-sm" data-booking-open data-service="Hydration Treatment">Book</button>
+              </div>
             </div>
           </div>
-          <div class="service-item">
-            <div class="service-item-info">
-              <h4>Hair Spa</h4>
-              <p>Deep conditioning treatment to nourish, strengthen, and revitalize your hair.</p>
+        </div>
+
+        <!-- CATEGORY: MAKEUP -->
+        <div class="service-category-block" id="makeup">
+          <div class="service-category-header">
+            <h2 class="service-category-title">Professional Makeup Artistry</h2>
+            <span class="eyebrow">EDITORIAL • GLAM • OCCASION</span>
+          </div>
+
+          <div class="service-menu-list">
+            <!-- Party Makeup -->
+            <div class="service-menu-item">
+              <div class="service-menu-info">
+                <h4>Party Makeup</h4>
+                <p>Radiant dewy or matte skin base, subtle eye enhancement, defined brows, natural lip tint, and setting mist.</p>
+              </div>
+              <div class="service-menu-right">
+                <span class="service-menu-price">Starting from ₹2,000</span>
+                <button class="btn btn-outline btn-sm" data-booking-open data-service="Party Makeup">Book</button>
+              </div>
             </div>
-            <div class="service-item-price">
-              <span class="price-from">Starting from</span>
-              <span class="price">&#8377; 1,000</span>
-              <button class="btn-book" data-booking-open>Book Now</button>
+
+            <!-- Occasion Makeup -->
+            <div class="service-menu-item">
+              <div class="service-menu-info">
+                <h4>Occasion & Evening Glam</h4>
+                <p>High-definition evening glamour with dramatic eyes or bold lip, mink flutter lashes, and sculpting contour.</p>
+              </div>
+              <div class="service-menu-right">
+                <span class="service-menu-price">Starting from ₹3,500</span>
+                <button class="btn btn-outline btn-sm" data-booking-open data-service="Occasion Makeup">Book</button>
+              </div>
+            </div>
+
+            <!-- Bridal Makeup -->
+            <div class="service-menu-item">
+              <div class="service-menu-info">
+                <h4>Bridal Makeup Masterpiece</h4>
+                <p>Airbrush or HD bridal base, waterproof longevity seal, artisanal lash application, and jewelry/dupatta setting.</p>
+              </div>
+              <div class="service-menu-right">
+                <span class="service-menu-price">Starting from ₹15,000</span>
+                <button class="btn btn-outline btn-sm" data-booking-open data-service="Bridal Makeup">Book</button>
+              </div>
             </div>
           </div>
-          <div class="service-item">
-            <div class="service-item-info">
-              <h4>Hair Color</h4>
-              <p>Full global hair coloring using premium, ammonia-free color products.</p>
+        </div>
+
+        <!-- CATEGORY: NAILS -->
+        <div class="service-category-block" id="nails">
+          <div class="service-category-header">
+            <h2 class="service-category-title">Luxury Nail Care</h2>
+            <span class="eyebrow">CARE • GEL • SPA</span>
+          </div>
+
+          <div class="service-menu-list">
+            <!-- Manicure -->
+            <div class="service-menu-item">
+              <div class="service-menu-info">
+                <h4>Signature Spa Manicure</h4>
+                <p>Nail shaping, gentle cuticle care, organic brown sugar scrub, hand massage, and breathable lacquer polish.</p>
+              </div>
+              <div class="service-menu-right">
+                <span class="service-menu-price">Starting from ₹600</span>
+                <button class="btn btn-outline btn-sm" data-booking-open data-service="Manicure">Book</button>
+              </div>
             </div>
-            <div class="service-item-price">
-              <span class="price-from">Starting from</span>
-              <span class="price">&#8377; 2,500</span>
-              <button class="btn-book" data-booking-open>Book Now</button>
+
+            <!-- Pedicure -->
+            <div class="service-menu-item">
+              <div class="service-menu-info">
+                <h4>Deluxe Spa Pedicure</h4>
+                <p>Aromatherapy foot soak, heel buffing, exfoliating sea-salt rub, hot towel wrap, and restorative massage.</p>
+              </div>
+              <div class="service-menu-right">
+                <span class="service-menu-price">Starting from ₹800</span>
+                <button class="btn btn-outline btn-sm" data-booking-open data-service="Pedicure">Book</button>
+              </div>
+            </div>
+
+            <!-- Gel Nails -->
+            <div class="service-menu-item">
+              <div class="service-menu-info">
+                <h4>Gel Nails & Nail Art</h4>
+                <p>Long-lasting high-shine UV gel overlay, minimalist French tips, chrome glaze, or custom hand-drawn nail art.</p>
+              </div>
+              <div class="service-menu-right">
+                <span class="service-menu-price">Starting from ₹1,200</span>
+                <button class="btn btn-outline btn-sm" data-booking-open data-service="Gel Nails">Book</button>
+              </div>
             </div>
           </div>
-          <div class="service-item">
-            <div class="service-item-info">
-              <h4>Balayage</h4>
-              <p>Hand-painted highlights for a natural, sun-kissed, dimensional look.</p>
+        </div>
+
+        <!-- CATEGORY: BRIDAL PACKAGES -->
+        <div class="service-category-block" id="bridal">
+          <div class="service-category-header">
+            <h2 class="service-category-title">Bridal Sanctuary Packages</h2>
+            <span class="eyebrow">YOUR SPECIAL DAY</span>
+          </div>
+
+          <div class="service-menu-list">
+            <!-- Bridal Makeup -->
+            <div class="service-menu-item">
+              <div class="service-menu-info">
+                <h4>Signature Bridal Makeup</h4>
+                <p>Full bespoke wedding day makeup, luxury lashes, precision dupatta styling, and personalized touch-up kit.</p>
+              </div>
+              <div class="service-menu-right">
+                <span class="service-menu-price">Starting from ₹15,000</span>
+                <button class="btn btn-outline btn-sm" data-booking-open data-service="Signature Bridal Makeup">Book</button>
+              </div>
             </div>
-            <div class="service-item-price">
-              <span class="price-from">Starting from</span>
-              <span class="price">&#8377; 4,000</span>
-              <button class="btn-book" data-booking-open>Book Now</button>
+
+            <!-- Bridal Hair Styling -->
+            <div class="service-menu-item">
+              <div class="service-menu-info">
+                <h4>Bridal Hair Architecture</h4>
+                <p>Intricate bridal buns, romantic textured braids, fresh flower or jewel placement, and extensions integration.</p>
+              </div>
+              <div class="service-menu-right">
+                <span class="service-menu-price">Starting from ₹5,000</span>
+                <button class="btn btn-outline btn-sm" data-booking-open data-service="Bridal Hair Styling">Book</button>
+              </div>
+            </div>
+
+            <!-- Pre-Bridal Package -->
+            <div class="service-menu-item">
+              <div class="service-menu-info">
+                <h4>Comprehensive Pre-Bridal Package</h4>
+                <p>Complete 30-day glow regimen: 2 signature facials, full-body polishing, deluxe hair spa, mani-pedi, and body rituals.</p>
+              </div>
+              <div class="service-menu-right">
+                <span class="service-menu-price">Starting from ₹22,000</span>
+                <button class="btn btn-outline btn-sm" data-booking-open data-service="Pre-Bridal Package">Book</button>
+              </div>
             </div>
           </div>
-          <div class="service-item">
-            <div class="service-item-info">
-              <h4>Highlights</h4>
-              <p>Strategic highlights to add depth, dimension, and brightness to your hair.</p>
-            </div>
-            <div class="service-item-price">
-              <span class="price-from">Starting from</span>
-              <span class="price">&#8377; 3,000</span>
-              <button class="btn-book" data-booking-open>Book Now</button>
-            </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================== FINAL CTA ========================== -->
+    <section class="final-cta">
+      <div class="container">
+        <div class="final-cta-content">
+          <span class="eyebrow">RESERVE YOUR APPOINTMENT</span>
+          <h2>Ready for Your Next Beauty Moment?</h2>
+          <p>Book your appointment and let us take care of the rest. Experience individualized luxury crafted for your confidence.</p>
+          <div class="final-cta-actions">
+            <button class="btn btn-accent btn-lg" data-booking-open>Book Appointment</button>
+            <a href="https://wa.me/919999999999?text=Hi%20Lumi%C3%A8re%20Beauty%20Studio%2C%20I%20would%20like%20to%20book%20an%20appointment." class="btn btn-whatsapp btn-lg" data-whatsapp-btn>
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+            </a>
           </div>
         </div>
       </div>
+    </section>
+  </main>
 
-      <!-- SKIN -->
-      <div class="service-category fade-in-up">
-        <div class="service-category-header">
-          <span class="category-icon"><i class="fas fa-spa"></i></span>
-          <h2>Skin</h2>
-        </div>
-        <div class="services-list">
-          <div class="service-item">
-            <div class="service-item-info">
-              <h4>Classic Facial</h4>
-              <p>A refreshing facial to cleanse, exfoliate, and rejuvenate your skin.</p>
-            </div>
-            <div class="service-item-price">
-              <span class="price-from">Starting from</span>
-              <span class="price">&#8377; 1,200</span>
-              <button class="btn-book" data-booking-open>Book Now</button>
-            </div>
-          </div>
-          <div class="service-item">
-            <div class="service-item-info">
-              <h4>Glow Facial</h4>
-              <p>An advanced facial designed to restore radiance and give you an instant glow.</p>
-            </div>
-            <div class="service-item-price">
-              <span class="price-from">Starting from</span>
-              <span class="price">&#8377; 1,800</span>
-              <button class="btn-book" data-booking-open>Book Now</button>
-            </div>
-          </div>
-          <div class="service-item">
-            <div class="service-item-info">
-              <h4>Deep Cleansing</h4>
-              <p>Thorough deep-pore cleansing treatment for clearer, healthier-looking skin.</p>
-            </div>
-            <div class="service-item-price">
-              <span class="price-from">Starting from</span>
-              <span class="price">&#8377; 1,500</span>
-              <button class="btn-book" data-booking-open>Book Now</button>
-            </div>
-          </div>
-          <div class="service-item">
-            <div class="service-item-info">
-              <h4>Hydration Treatment</h4>
-              <p>Intensive moisture treatment to plump, smooth, and deeply hydrate dry skin.</p>
-            </div>
-            <div class="service-item-price">
-              <span class="price-from">Starting from</span>
-              <span class="price">&#8377; 2,200</span>
-              <button class="btn-book" data-booking-open>Book Now</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- MAKEUP -->
-      <div class="service-category fade-in-up">
-        <div class="service-category-header">
-          <span class="category-icon"><i class="fas fa-palette"></i></span>
-          <h2>Makeup</h2>
-        </div>
-        <div class="services-list">
-          <div class="service-item">
-            <div class="service-item-info">
-              <h4>Party Makeup</h4>
-              <p>Glamorous makeup looks designed to make you stand out at any celebration.</p>
-            </div>
-            <div class="service-item-price">
-              <span class="price-from">Starting from</span>
-              <span class="price">&#8377; 2,000</span>
-              <button class="btn-book" data-booking-open>Book Now</button>
-            </div>
-          </div>
-          <div class="service-item">
-            <div class="service-item-info">
-              <h4>Occasion Makeup</h4>
-              <p>Polished, elegant makeup for engagements, receptions, and special occasions.</p>
-            </div>
-            <div class="service-item-price">
-              <span class="price-from">Starting from</span>
-              <span class="price">&#8377; 3,500</span>
-              <button class="btn-book" data-booking-open>Book Now</button>
-            </div>
-          </div>
-          <div class="service-item">
-            <div class="service-item-info">
-              <h4>Bridal Makeup</h4>
-              <p>Complete bridal makeup with premium products for a flawless, long-lasting look.</p>
-            </div>
-            <div class="service-item-price">
-              <span class="price-from">Starting from</span>
-              <span class="price">&#8377; 8,000</span>
-              <button class="btn-book" data-booking-open>Book Now</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- NAILS -->
-      <div class="service-category fade-in-up">
-        <div class="service-category-header">
-          <span class="category-icon"><i class="fas fa-hand-sparkles"></i></span>
-          <h2>Nails</h2>
-        </div>
-        <div class="services-list">
-          <div class="service-item">
-            <div class="service-item-info">
-              <h4>Manicure</h4>
-              <p>Nourishing hand and nail care treatment for soft, beautiful hands.</p>
-            </div>
-            <div class="service-item-price">
-              <span class="price-from">Starting from</span>
-              <span class="price">&#8377; 600</span>
-              <button class="btn-book" data-booking-open>Book Now</button>
-            </div>
-          </div>
-          <div class="service-item">
-            <div class="service-item-info">
-              <h4>Pedicure</h4>
-              <p>Relaxing foot care treatment that exfoliates, softens, and refreshes.</p>
-            </div>
-            <div class="service-item-price">
-              <span class="price-from">Starting from</span>
-              <span class="price">&#8377; 800</span>
-              <button class="btn-book" data-booking-open>Book Now</button>
-            </div>
-          </div>
-          <div class="service-item">
-            <div class="service-item-info">
-              <h4>Gel Nails</h4>
-              <p>Long-lasting gel nail polish in the color and finish of your choice.</p>
-            </div>
-            <div class="service-item-price">
-              <span class="price-from">Starting from</span>
-              <span class="price">&#8377; 1,200</span>
-              <button class="btn-book" data-booking-open>Book Now</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- BRIDAL -->
-      <div class="service-category fade-in-up">
-        <div class="service-category-header">
-          <span class="category-icon"><i class="fas fa-gem"></i></span>
-          <h2>Bridal</h2>
-        </div>
-        <div class="services-list">
-          <div class="service-item">
-            <div class="service-item-info">
-              <h4>Bridal Makeup</h4>
-              <p>Complete bridal makeup including trial session and day-of application.</p>
-            </div>
-            <div class="service-item-price">
-              <span class="price-from">Starting from</span>
-              <span class="price">&#8377; 15,000</span>
-              <button class="btn-book" data-booking-open>Book Now</button>
-            </div>
-          </div>
-          <div class="service-item">
-            <div class="service-item-info">
-              <h4>Bridal Hair Styling</h4>
-              <p>Elegant bridal hair styling to complement your makeup and outfit perfectly.</p>
-            </div>
-            <div class="service-item-price">
-              <span class="price-from">Starting from</span>
-              <span class="price">&#8377; 5,000</span>
-              <button class="btn-book" data-booking-open>Book Now</button>
-            </div>
-          </div>
-          <div class="service-item">
-            <div class="service-item-info">
-              <h4>Pre-Bridal Package</h4>
-              <p>Complete pre-bridal care including facials, hair spa, and skin treatments.</p>
-            </div>
-            <div class="service-item-price">
-              <span class="price-from">Starting from</span>
-              <span class="price">&#8377; 12,000</span>
-              <button class="btn-book" data-booking-open>Book Now</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- FEATURED OFFER -->
-  <section class="featured-offer">
-    <div class="featured-bg">
-      <img src="https://images.pexels.com/photos/7031713/pexels-photo-7031713.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Luxurious spa treatment room" loading="lazy" width="800" height="600">
-    </div>
-    <div class="container">
-      <div class="featured-offer-content fade-in-up">
-        <span class="eyebrow" style="color: var(--color-accent-light);">Personalized Consultation</span>
-        <h2>Your Glow-Up Starts Here</h2>
-        <p>Enjoy a personalized beauty consultation with our team and discover the treatments that are right for you.</p>
-        <button class="btn btn-accent btn-lg" data-booking-open>Book Your Consultation</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- BOOKING CTA -->
-  <section class="booking-cta">
-    <div class="container">
-      <div class="fade-in-up">
-        <span class="eyebrow">Book Your Visit</span>
-        <h2>Ready for Your Next Beauty Moment?</h2>
-        <p>Book your appointment and let us take care of the rest.</p>
-        <div class="booking-cta-actions">
-          <button class="btn btn-primary btn-lg" data-booking-open>Book Appointment</button>
-          <a href="#" class="btn btn-outline btn-lg" data-whatsapp><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="site-footer" role="contentinfo">
+  <!-- ========================== FOOTER ========================== -->
+  <footer class="site-footer" id="siteFooter" role="contentinfo">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="index.html" class="site-logo">
+          <a href="./index.html" class="site-logo" aria-label="Lumière Beauty Studio">
             <span class="logo-mark">L</span>
             <span class="logo-text">
-              <span>Lumière</span>
-              <span>Beauty Studio</span>
+              <span class="logo-title">Lumière</span>
+              <span class="logo-subtitle">Beauty Studio</span>
             </span>
           </a>
-          <p>Where Beauty Meets Confidence. Premium hair, skin, and beauty experiences designed around you.</p>
-          <div class="footer-social">
-            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <p class="footer-desc" data-config-text="shortDescription">Where Beauty Meets Confidence. Premium hair, skin, and beauty experiences designed around you.</p>
+          <div class="footer-social-links">
+            <a href="https://instagram.com/lumierebeautystudio" data-social="instagram" class="footer-social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://facebook.com/lumierebeautystudio" data-social="facebook" class="footer-social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://youtube.com/@lumierebeautystudio" data-social="youtube" class="footer-social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
           </div>
         </div>
+
         <div class="footer-col">
           <h4>Quick Links</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
+          <ul class="footer-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./contact.html">Contact</a></li>
           </ul>
         </div>
+
         <div class="footer-col">
           <h4>Services</h4>
-          <ul>
-            <li><a href="services.html">Hair</a></li>
-            <li><a href="services.html">Skin</a></li>
-            <li><a href="services.html">Makeup</a></li>
-            <li><a href="services.html">Bridal</a></li>
-            <li><a href="services.html">Nails</a></li>
+          <ul class="footer-links">
+            <li><a href="./services.html#hair">Hair</a></li>
+            <li><a href="./services.html#skin">Skin</a></li>
+            <li><a href="./services.html#makeup">Makeup</a></li>
+            <li><a href="./services.html#bridal">Bridal</a></li>
+            <li><a href="./services.html#nails">Nails</a></li>
           </ul>
         </div>
+
         <div class="footer-col">
-          <h4>Contact</h4>
-          <div class="footer-contact-item">
-            <span class="contact-label">Address</span>
-            <span class="contact-value">123 Luxury Avenue, New Delhi</span>
-          </div>
-          <div class="footer-contact-item">
-            <span class="contact-label">Phone</span>
-            <span class="contact-value">+91 99999 99999</span>
-          </div>
-          <div class="footer-contact-item">
-            <span class="contact-label">Email</span>
-            <span class="contact-value">hello@lumierebeautystudio.com</span>
-          </div>
-          <div class="footer-contact-item">
-            <span class="contact-label">Hours</span>
-            <span class="contact-value">Mon–Sat: 10:00 AM – 8:00 PM<br>Sunday: 11:00 AM – 6:00 PM</span>
+          <h4>Contact Us</h4>
+          <div class="footer-contact-info">
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span data-config-address>123 Luxury Avenue, Ground Floor, New Delhi, Delhi 110001, India</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+919999999999" data-config-phone>+91 99999 99999</a>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:hello@lumierebeautystudio.com" data-config-email>hello@lumierebeautystudio.com</a>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-clock"></i>
+              <span>Mon–Sat: 10:00 AM – 8:00 PM<br>Sunday: 11:00 AM – 6:00 PM</span>
+            </div>
           </div>
         </div>
       </div>
+
       <div class="footer-bottom">
-        <p>&copy; 2026 Lumière Beauty Studio. All Rights Reserved.</p>
+        <p>&copy; <span data-year>2026</span> Lumière Beauty Studio. All Rights Reserved.</p>
+        <p>Where Beauty Meets Confidence.</p>
       </div>
     </div>
   </footer>
 
-  <!-- BACK TO TOP -->
-  <button class="back-to-top" aria-label="Back to top">
-    <i class="fas fa-arrow-up"></i>
-  </button>
-
-  <!-- BOOKING MODAL -->
-  <div id="booking-modal" class="modal-overlay" role="dialog" aria-labelledby="booking-title" aria-modal="true">
-    <div class="modal">
+  <!-- ========================== APPOINTMENT BOOKING MODAL ========================== -->
+  <div class="modal-backdrop" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" aria-label="Close booking modal">&times;</button>
       <div class="modal-header">
-        <h3 id="booking-title">Book an Appointment</h3>
-        <button class="modal-close" aria-label="Close">&times;</button>
+        <span class="eyebrow">RESERVE A SPOT</span>
+        <h3 id="modalTitle">Book an Appointment</h3>
+        <p>Fill out the form below and our studio team will confirm your preferred session.</p>
       </div>
-      <div class="modal-body">
-        <form id="booking-form" novalidate>
+
+      <div class="form-success-banner" role="alert">
+        <div class="form-success-icon"><i class="fa-solid fa-circle-check"></i></div>
+        <h4 style="font-family: var(--font-heading); font-size: 1.4rem; margin-bottom: 0.35rem;">Request Received</h4>
+        <p style="font-size: 0.9375rem;">Thank you! Your appointment request has been submitted. We will contact you shortly to confirm your booking.</p>
+      </div>
+
+      <form id="bookingForm" novalidate>
+        <div class="form-group">
+          <label for="modalName">Full Name <span class="required">*</span></label>
+          <input type="text" id="modalName" class="form-control" placeholder="e.g. Priya Sen" required>
+          <span class="form-error">Please enter your full name.</span>
+        </div>
+
+        <div class="form-group">
+          <label for="modalPhone">Phone Number <span class="required">*</span></label>
+          <input type="tel" id="modalPhone" class="form-control" placeholder="e.g. +91 98765 43210" required>
+          <span class="form-error">Please enter a valid contact number.</span>
+        </div>
+
+        <div class="form-group">
+          <label for="modalService">Select Service <span class="required">*</span></label>
+          <select id="modalService" class="form-control" required>
+            <option value="">-- Choose a Service --</option>
+            <option value="Haircut & Styling">Haircut & Styling</option>
+            <option value="Blow Dry">Blow Dry & Texture</option>
+            <option value="Hair Spa">Nourishing Hair Spa</option>
+            <option value="Hair Color">Global Hair Color</option>
+            <option value="Balayage">Dimensional Balayage</option>
+            <option value="Highlights">Crown & Full Highlights</option>
+            <option value="Classic Facial">Classic Botanical Facial</option>
+            <option value="Glow Facial">Lumière Signature Glow Facial</option>
+            <option value="Deep Cleansing">Deep Cleansing & Detox</option>
+            <option value="Hydration Treatment">Intense Hydration Treatment</option>
+            <option value="Party Makeup">Party Makeup</option>
+            <option value="Occasion Makeup">Occasion & Evening Glam</option>
+            <option value="Bridal Makeup">Bridal Makeup Masterpiece</option>
+            <option value="Manicure">Signature Spa Manicure</option>
+            <option value="Pedicure">Deluxe Spa Pedicure</option>
+            <option value="Gel Nails">Gel Nails & Nail Art</option>
+            <option value="Pre-Bridal Package">Comprehensive Pre-Bridal Package</option>
+          </select>
+          <span class="form-error">Please select a service.</span>
+        </div>
+
+        <div class="form-row">
           <div class="form-group">
-            <label for="booking-name">Full Name <span class="required">*</span></label>
-            <input type="text" id="booking-name" name="name" required>
-            <span class="form-error">This field is required.</span>
+            <label for="modalDate">Preferred Date <span class="required">*</span></label>
+            <input type="date" id="modalDate" class="form-control" required>
+            <span class="form-error">Please select a date.</span>
           </div>
+
           <div class="form-group">
-            <label for="booking-phone">Phone Number <span class="required">*</span></label>
-            <input type="tel" id="booking-phone" name="phone" required>
-            <span class="form-error">This field is required.</span>
-          </div>
-          <div class="form-group">
-            <label for="booking-service">Service <span class="required">*</span></label>
-            <select id="booking-service" name="service" required>
-              <option value="">Select a service</option>
-              <option value="Hair Styling">Hair Styling</option>
-              <option value="Hair Color">Hair Color</option>
-              <option value="Skin & Facial">Skin & Facial</option>
-              <option value="Bridal Beauty">Bridal Beauty</option>
-              <option value="Manicure & Pedicure">Manicure & Pedicure</option>
-              <option value="Makeup">Makeup</option>
-              <option value="Consultation">Consultation</option>
+            <label for="modalTime">Preferred Time</label>
+            <select id="modalTime" class="form-control">
+              <option value="Morning">Morning (10:00 AM – 1:00 PM)</option>
+              <option value="Afternoon">Afternoon (1:00 PM – 4:00 PM)</option>
+              <option value="Evening">Evening (4:00 PM – 8:00 PM)</option>
             </select>
-            <span class="form-error">This field is required.</span>
           </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="booking-date">Preferred Date <span class="required">*</span></label>
-              <input type="date" id="booking-date" name="date" required>
-              <span class="form-error">This field is required.</span>
-            </div>
-            <div class="form-group">
-              <label for="booking-time">Preferred Time <span class="required">*</span></label>
-              <input type="time" id="booking-time" name="time" required>
-              <span class="form-error">This field is required.</span>
-            </div>
-          </div>
-          <button type="submit" class="btn btn-primary btn-block btn-lg">Submit Request</button>
-        </form>
-      </div>
-      <div class="modal-success">
-        <div class="success-icon"><i class="fas fa-check"></i></div>
-        <h4>Thank You!</h4>
-        <p>Your appointment request has been received. We'll contact you shortly to confirm your booking.</p>
-        <button class="btn btn-accent modal-success-close">Close</button>
-      </div>
+        </div>
+
+        <div style="margin-top: 1.5rem;">
+          <button type="submit" class="btn btn-accent btn-lg w-full" style="width: 100%;">Submit Request</button>
+        </div>
+        <p class="form-notice">Frontend Demo: In a live setup, this submits directly to your booking engine or WhatsApp.</p>
+      </form>
     </div>
   </div>
 
-  <script src="js/script.js"></script>
+  <script src="./js/config.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>

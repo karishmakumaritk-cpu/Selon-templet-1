@@ -1,283 +1,183 @@
-# Lumière Beauty Studio — Salon Website Template #1
+# Lumière Beauty Studio — Luxury Editorial Salon Website Template #1
 
-A premium, modern, fully responsive salon website template built with pure HTML5, CSS3, and vanilla JavaScript. No frameworks, no build tools, no backend — just drop it on GitHub Pages and go.
-
----
-
-## Features
-
-- **5 complete pages** — Home, About, Services, Gallery, Contact
-- **Premium design** — editorial typography, warm neutral palette, muted gold accents
-- **Fully responsive** — tested from 375px mobile to 1440px+ desktop
-- **Booking modal** — opens from any "Book Appointment" button, validates input, shows confirmation
-- **Contact form** — front-end validation with a demo success message (ready to connect to a real backend)
-- **Gallery filtering** — filter by category (All, Hair, Makeup, Bridal, Nails, Salon) with smooth animations
-- **Lightbox** — full-screen image viewer with prev/next navigation and keyboard support (Escape, arrows)
-- **Sticky header** — compacts on scroll
-- **Mobile hamburger menu** — slide-in navigation with overlay
-- **Back-to-top button** — appears on scroll
-- **Scroll reveal animations** — subtle fade-in-up effects (respects `prefers-reduced-motion`)
-- **SEO ready** — unique titles, meta descriptions, Open Graph tags, semantic HTML, LocalBusiness JSON-LD
-- **Accessible** — ARIA labels, keyboard navigation, visible focus states, alt text on all images
-- **Performance optimized** — lazy-loaded images, no heavy libraries, minimal JavaScript
-- **Zero dependencies** — only Google Fonts and Font Awesome (CDN)
+> **Where Beauty Meets Confidence**  
+> A premium, high-end commercial website template designed for luxury salons, beauty studios, spas, hair artists, and bridal sanctuaries.
 
 ---
 
-## Technologies
+## 📖 Project Overview
 
-| Technology | Purpose |
-|---|---|
-| HTML5 | Structure & semantic markup |
-| CSS3 | Styling, animations, responsive design |
-| Vanilla JavaScript | Interactivity (no frameworks) |
-| Google Fonts | Cormorant Garamond (headings) + Jost (body) |
-| Font Awesome 6 | Icons (CDN) |
+**Lumière Beauty Studio** (Template #1: *Luxury Editorial Beauty Salon*) is a production-ready, fully responsive static website template engineered with HTML5, CSS3, and modern Vanilla JavaScript. Built to agency standards, this template delivers a warm luxury aesthetic with editorial typography, sophisticated color palettes, smooth interactions, and zero heavy framework overhead.
 
 ---
 
-## Pages
+## ✨ Features & Highlights
 
-| Page | File | Description |
-|---|---|---|
-| Home | `index.html` | Hero, stats, about preview, services preview, featured offer, why choose us, gallery preview, testimonials, social section, booking CTA |
-| About | `about.html` | Story, philosophy, approach, why choose us, team section, CTA |
-| Services | `services.html` | Full service menu with prices across 5 categories (Hair, Skin, Makeup, Nails, Bridal) |
-| Gallery | `gallery.html` | Filterable image grid with lightbox |
-| Contact | `contact.html` | Contact info, form, map placeholder, WhatsApp CTA |
+- **Agency-Grade Editorial Aesthetic**: Warm ivory, cream, soft beige, champagne gold, and deep charcoal.
+- **Pure Static Architecture**: 100% compatible with GitHub Pages, Cloudflare Pages, Netlify, Vercel, or standard Apache/Nginx hosting.
+- **Centralized Configuration (`js/config.js`)**: Update salon name, phone, WhatsApp number, email, address, opening hours, and social media links in one file.
+- **Accessible Sticky Header**: Smooth shrink animation on scroll, active page indicator, and keyboard-friendly navigation.
+- **Interactive Mobile Drawer Menu**: Full-screen slide-in mobile navigation with body scroll lock and escape-key handling.
+- **Appointment Booking Modal**: Client-side validation for name, phone, service, date, and preferred time with a clean confirmation banner.
+- **Gallery with Vanilla JS Filtering & Lightbox**: Instant category filtering (Hair, Makeup, Bridal, Nails, Salon) and full-screen lightbox with keyboard navigation (`←`, `→`, `Esc`).
+- **Direct WhatsApp Integration**: Pre-configured WhatsApp deep links with prefilled message strings (`https://wa.me/...`).
+- **SEO & Accessibility Optimized**: Semantic HTML5, WCAG AA contrast compliance, ARIA attributes, Open Graph tags, and LocalBusiness JSON-LD structured data.
+- **Zero Framework / Zero Dependency Runtime**: Blazing fast load times with lazy-loaded imagery and no build step required.
 
 ---
 
-## File Structure
+## 📄 Website Pages
 
-```
-salon-template-01/
-│
-├── index.html          # Home page
-├── about.html          # About page
-├── services.html       # Services & pricing page
-├── gallery.html        # Gallery page
-├── contact.html        # Contact page
+1. **`index.html`** — Luxury Editorial Home Page:
+   - High-impact editorial hero with 10+ Years credibility badge
+   - Key trust statistics (Experience, Clients, Services, Rating)
+   - Asymmetrical About preview with aesthetic framing
+   - 6 Signature service cards with starting prices & direct booking
+   - Featured Personalized Consultation experience banner
+   - "Why Women Choose Lumière" numbered editorial benefits (01–04)
+   - Visual gallery preview
+   - Client Love testimonials (Demo Content)
+   - Social / Instagram beauty journal grid
+   - Final call to action with direct WhatsApp & booking triggers
+2. **`about.html`** — Studio Story, Philosophy, Approach, and Meet the Team
+3. **`services.html`** — Comprehensive categorization (Hair, Skin, Makeup, Nails, Bridal Packages) with transparent starting prices and booking buttons
+4. **`gallery.html`** — Filterable photo portfolio with interactive fullscreen lightbox modal
+5. **`contact.html`** — Location details, direct contact info, business hours, embedded map, and validated inquiry form
+
+---
+
+## 🛠 Technology Stack
+
+- **Markup**: Semantic HTML5
+- **Styling**: CSS3 with CSS Custom Properties (Variables) & Fluid `clamp()` Typography
+- **Typography**: Google Fonts (*Cormorant Garamond* for serif display headings & *DM Sans* for body copy)
+- **Icons**: Font Awesome 6.5.1
+- **Scripting**: Vanilla JavaScript (ES6+)
+- **Deployment**: GitHub Actions static deployment (`.github/workflows/deploy.yml`)
+
+---
+
+## 📁 Folder Structure
+
+```text
+lumiere-salon-template-01/
+├── index.html                  # Home Page
+├── about.html                  # About Page
+├── services.html               # Services & Treatment Menu
+├── gallery.html                # Filterable Gallery & Lightbox
+├── contact.html                # Contact & Location Page
 │
 ├── css/
-│   └── style.css        # Complete design system
+│   └── style.css               # Global Design System & Responsive Styles
 │
 ├── js/
-│   └── script.js        # All interactive functionality
+│   ├── config.js               # Central Business Configuration (Edit this first!)
+│   └── main.js                 # Header, Modal, Gallery, Lightbox & Validation
 │
 ├── assets/
-│   └── images/          # (Place your local images here)
+│   └── favicon.svg             # Luxury Monogram SVG Favicon
 │
-└── README.md           # This file
+├── .github/
+│   └── workflows/
+│       └── deploy.yml          # Automated GitHub Pages Deployment Action
+│
+├── package.json                # Project manifest & local dev scripts
+├── server.js                   # Minimal Express server for local container preview
+├── metadata.json               # Platform manifest
+└── README.md                   # Complete template guide & documentation
 ```
 
 ---
 
-## Installation & Local Use
+## 🎨 How to Customize for a Client
 
-1. Download or clone this repository.
-2. Open `index.html` in any modern browser.
-3. That's it — no build step, no dependencies to install.
-
-To serve locally (optional, for testing):
-
-```bash
-# Python 3
-python -m http.server 8000
-
-# Then visit http://localhost:8000
-```
-
----
-
-## Customization Guide
-
-### How to Change the Salon Name
-
-The brand name "Lumière Beauty Studio" appears in the HTML of each page. To change it:
-
-1. **In each HTML file**, find and replace:
-   - `Lumière` → Your salon name
-   - `lumierebeautystudio` → your handle (for email/social)
-
-2. **Logo mark**: Find `<span class="logo-mark">L</span>` and change the letter.
-
-3. **The brand name is NOT in JavaScript** — it's all in HTML, making it easy to find and replace.
-
-### How to Change Colors
-
-All colors are defined as CSS variables at the top of `css/style.css`:
-
-```css
-:root {
-  --color-background: #faf8f5;  /* Page background */
-  --color-surface: #ffffff;     /* Cards, surfaces */
-  --color-cream: #f5f0ea;       /* Alternate sections */
-  --color-text: #2b2724;        /* Body text */
-  --color-muted: #8a8278;       /* Secondary text */
-  --color-accent: #b08968;      /* Primary accent (gold/bronze) */
-  --color-accent-dark: #97714f; /* Hover states */
-  --color-accent-light: #d4b896;/* Light accent */
-}
-```
-
-Change these values and the entire site updates instantly.
-
-### How to Change Images
-
-Images currently use Pexels URLs. To use your own:
-
-1. Place image files in `assets/images/`
-2. In each HTML file, replace the `src` attribute:
-   ```html
-   <!-- Before -->
-   <img src="https://images.pexels.com/...">
-   <!-- After -->
-   <img src="assets/images/your-image.jpg">
-   ```
-3. Update the `alt` text to describe your image.
-
-### How to Change Prices
-
-Prices appear in two places:
-
-1. **Home page** (`index.html`) — Service cards in the "Signature Services" section
-2. **Services page** (`services.html`) — Full service list
-
-Find `&#8377;` (the ₹ symbol) followed by the price amount and change the number.
-
-### How to Change the WhatsApp Number
-
-In `js/script.js`, find the `CONFIG` object at the top:
-
+### 1. Change Salon Name & Contact Details
+Open **`js/config.js`** and edit the centralized variables:
 ```javascript
-const CONFIG = {
-  whatsappNumber: '919999999999', // Replace with your number (country code + number, no +)
-  whatsappMessage: "Hello! I'd like to book an appointment...",
+const SALON_CONFIG = {
+  businessName: "Lumière Beauty Studio",    // Change to client's salon name
+  tagline: "Where Beauty Meets Confidence", // Change to client's tagline
+  phone: "+91 99999 99999",                 // Formatted display phone
+  phoneRaw: "+919999999999",               // Raw phone for tel: links
+  whatsappNumber: "919999999999",           // International format without '+'
+  whatsappMessage: "Hi Lumière Beauty Studio, I would like to book an appointment.",
+  email: "hello@lumierebeautystudio.com",
+  address: "123 Luxury Avenue, Ground Floor",
+  city: "New Delhi, Delhi",
+  postalCode: "110001",
+  openingHours: {
+    weekdays: "Mon – Sat: 10:00 AM – 8:00 PM",
+    sunday: "Sunday: 11:00 AM – 6:00 PM"
+  }
 };
 ```
 
-Remove the `+` and any spaces. Example: `919876543210` for +91 98765 43210.
-
-### How to Change Phone, Email, Address, Hours
-
-These appear in the footer of every page and on the contact page. Find and replace:
-
-- `+91 99999 99999` → Your phone number
-- `hello@lumierebeautystudio.com` → Your email
-- `123 Luxury Avenue, New Delhi` → Your address
-- `Mon–Sat: 10:00 AM – 8:00 PM` → Your hours
-- `Sunday: 11:00 AM – 6:00 PM` → Your Sunday hours
-
-Also update the JSON-LD structured data in `index.html` (in the `<script type="application/ld+json">` block).
-
-### How to Change Social Links
-
-In the footer of each page, find the `footer-social` section and replace the `href="#"` with your social URLs:
-
-```html
-<a href="https://instagram.com/yourhandle" aria-label="Instagram">
-<a href="https://facebook.com/yourpage" aria-label="Facebook">
-<a href="https://youtube.com/yourchannel" aria-label="YouTube">
-```
-
-### How to Change Testimonials
-
-In `index.html`, find the testimonials section. Each testimonial has:
-
-- Star rating (5 `<i class="fas fa-star"></i>` icons)
-- Quote text in `<p class="testimonial-text">`
-- Author name in `<h4>`
-- Author role in `<span>`
-- Avatar initial in `<div class="testimonial-avatar">`
-
-### How to Change Team Members
-
-In `about.html`, find the team section. Each member has:
-
-- Image (`team-card-img`)
-- Name (`<h3>`)
-- Role (`<p class="team-role">`)
-- Bio (`<p class="team-bio">`)
-
-### How to Change Services
-
-In `services.html`, each service is a `service-item` div containing:
-- Service name (`<h4>`)
-- Description (`<p>`)
-- Price (`<span class="price">`)
-- The booking button (`data-booking-open`)
-
-To add a new service, copy a `service-item` block and change the content.
-
-### How to Connect the Booking Form to a Backend
-
-In `js/script.js`, find the `submitBookingForm()` function:
-
-```javascript
-function submitBookingForm(formData) {
-  // Replace this with your API call, e.g.:
-  // fetch('/api/booking', { method: 'POST', body: formData })
-  //   .then(response => { ... })
+### 2. Change Brand Colors
+Open **`css/style.css`** and modify the root variables:
+```css
+:root {
+  --color-background: #FAF8F5; /* Warm Ivory canvas */
+  --color-surface: #FFFFFF;    /* Pure white surface */
+  --color-surface-alt: #F4EFEB;/* Soft warm beige */
+  --color-text: #23201D;       /* Deep warm charcoal */
+  --color-accent: #B38E5D;     /* Champagne Gold */
+  --color-accent-hover: #987545;
 }
 ```
 
-### How to Connect the Contact Form to a Backend
-
-In `js/script.js`, find the `submitContactForm()` function:
-
-```javascript
-function submitContactForm(formData) {
-  // For Formspree:
-  // fetch('https://formspree.io/f/your-id', {
-  //   method: 'POST', body: formData,
-  //   headers: { 'Accept': 'application/json' }
-  // }).then(response => { ... })
+### 3. Change Typography
+In **`css/style.css`**, adjust `--font-heading` or `--font-body`:
+```css
+:root {
+  --font-heading: 'Cormorant Garamond', Garamond, serif;
+  --font-body: 'DM Sans', sans-serif;
 }
 ```
 
----
+### 4. Change Images
+All images use standard HTML `<img>` tags with Unsplash / local photography. To customize:
+- Replace image URLs or place client photos in an `/assets/images/` folder.
+- Ensure all `alt` tags describe the specific service or client visual.
 
-## Deploy on GitHub Pages
+### 5. Change Services & Pricing
+Edit the service blocks in `services.html` and `index.html`. Format starting prices with proper spacing (e.g. `Starting from ₹800`).
 
-1. Create a new GitHub repository.
-2. Upload all files (or push via git).
-3. Go to **Settings → Pages**.
-4. Under **Source**, select **Deploy from a branch**.
-5. Select **main** branch and **/ (root)** folder.
-6. Click **Save**.
-7. Your site will be live at `https://yourusername.github.io/your-repo-name/` within a few minutes.
-
-> **Note**: This template uses relative paths (`css/style.css`, `js/script.js`), so it works correctly even when deployed from a repository subdirectory.
-
----
-
-## Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- Mobile Safari (iOS 14+)
-- Chrome Mobile (Android 8+)
+### 6. Connect Booking & Contact Forms to Backend
+The booking modal and contact form are validated on the client side. To connect to an email dispatch service or CRM:
+- **Formspree**: Set `action="https://formspree.io/f/YOUR_ID"` and `method="POST"` on the `<form>` element.
+- **Netlify Forms**: Add `data-netlify="true"` to `<form>`.
+- **Custom Webhook / API**: Listen to the form submit event in `js/main.js` and `fetch('/api/book', { method: 'POST', body: ... })`.
 
 ---
 
-## License
+## 🚀 GitHub Pages Deployment
 
-This template is free to use and customize for personal and commercial projects. Attribution is appreciated but not required.
+This repository includes a ready-to-use GitHub Actions workflow:
+1. Push this repository to GitHub on the `main` branch.
+2. In your repository settings on GitHub, navigate to **Settings** → **Pages**.
+3. Under **Build and deployment** → **Source**, select **GitHub Actions**.
+4. The `.github/workflows/deploy.yml` workflow will automatically build and deploy your static site.
+5. Your live website will be accessible at: `https://<USERNAME>.github.io/<REPO-NAME>/`
 
----
-
-## Credits
-
-- **Fonts**: Google Fonts — Cormorant Garamond, Jost
-- **Icons**: Font Awesome 6
-- **Photography**: Pexels (placeholder images — replace with your own for production)
-- **Map**: Google Maps embed
+*Note: All stylesheet, script, and page links use relative paths (`./`) so the site will work cleanly on root domains or repository subpaths without 404 errors.*
 
 ---
 
-## Demo Content Notice
+## 📦 Client Delivery Checklist
 
-All content on this website is fictional demo content for the brand "Lumière Beauty Studio." All names, testimonials, team members, prices, and contact details are placeholders designed to be easily replaced with real information.
+Before handing the website over to your client:
+- [ ] Update `js/config.js` with verified business details
+- [ ] Replace demo team members in `about.html` with real stylists
+- [ ] Replace demo testimonials in `index.html` with authentic client reviews
+- [ ] Update social media handles in `js/config.js`
+- [ ] Update Google Maps iframe coordinates in `contact.html` and `js/config.js`
+- [ ] Test the WhatsApp booking link on both mobile and desktop
+- [ ] Verify form submissions to your preferred backend or email inbox
+- [ ] Review SEO meta tags and JSON-LD schema on each page
+
+---
+
+## ⚖️ License & Commercial Use
+
+Created as a reusable commercial website template for salons, spas, and beauty businesses.
+© 2026 Lumière Beauty Studio. All Rights Reserved.

@@ -3,45 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us | Lumière Beauty Studio</title>
-  <meta name="description" content="Get in touch with Lumière Beauty Studio. Visit us at 123 Luxury Avenue, New Delhi, or send us a message to book your next beauty appointment.">
+  <title>Contact & Location | Lumière Beauty Studio</title>
+  <meta name="description" content="Get in touch with Lumière Beauty Studio in New Delhi. Book your appointment, inquire about bespoke bridal packages, or visit our studio.">
+  <meta name="keywords" content="contact salon Delhi, salon appointment, beauty salon address Delhi, Lumière phone number">
+
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Contact Us | Lumière Beauty Studio">
-  <meta property="og:description" content="Visit us, call us, or send a message — we'd love to hear from you.">
-  <meta property="og:image" content="https://images.pexels.com/photos/7195809/pexels-photo-7195809.jpeg?auto=compress&cs=tinysrgb&h=650&w=940">
-  <link rel="canonical" href="">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Ccircle cx='18' cy='18' r='16' fill='none' stroke='%23b08968' stroke-width='2'/%3E%3Ctext x='18' y='24' text-anchor='middle' font-family='serif' font-size='14' fill='%23b08968'%3EL%3C/text%3E%3C/svg%3E">
+  <meta property="og:title" content="Contact & Location | Lumière Beauty Studio">
+  <meta property="og:description" content="Reach out to Lumière Beauty Studio to reserve your appointment or ask any questions about our luxury services.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1200&q=80">
+  <meta property="og:url" content="">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact & Location | Lumière Beauty Studio">
+  <meta name="twitter:description" content="Connect with our team to reserve your personalized beauty experience.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Canonical URL Placeholder -->
+  <link rel="canonical" href="./contact.html">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "name": "Lumière Beauty Studio",
+    "telephone": "+91 99999 99999",
+    "email": "hello@lumierebeautystudio.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "123 Luxury Avenue, Ground Floor",
+      "addressLocality": "New Delhi",
+      "addressRegion": "Delhi",
+      "postalCode": "110001",
+      "addressCountry": "IN"
+    }
+  }
+  </script>
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="site-header" role="banner">
+  <!-- ========================== HEADER ========================== -->
+  <header class="site-header" id="siteHeader" role="banner">
     <div class="container">
       <div class="header-inner">
-        <a href="index.html" class="site-logo" aria-label="Lumière Beauty Studio Home">
+        <a href="./index.html" class="site-logo" aria-label="Lumière Beauty Studio Home">
           <span class="logo-mark">L</span>
           <span class="logo-text">
-            <span>Lumière</span>
-            <span>Beauty Studio</span>
+            <span class="logo-title">Lumière</span>
+            <span class="logo-subtitle">Beauty Studio</span>
           </span>
         </a>
-        <nav class="main-nav" role="navigation" aria-label="Main navigation">
+
+        <nav class="main-nav" role="navigation" aria-label="Primary navigation">
           <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./contact.html" class="active">Contact</a></li>
           </ul>
         </nav>
+
         <div class="header-cta">
-          <button class="btn btn-accent btn-sm" data-booking-open>Book Appointment</button>
-          <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <button class="btn btn-accent btn-sm" data-booking-open id="headerBookBtn">Book Appointment</button>
+          <button class="hamburger" id="hamburgerBtn" aria-label="Toggle mobile menu" aria-expanded="false">
             <span></span><span></span><span></span>
           </button>
         </div>
@@ -49,289 +90,319 @@
     </div>
   </header>
 
-  <!-- MOBILE NAV -->
-  <div class="mobile-nav" role="navigation" aria-label="Mobile navigation">
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <button class="btn btn-accent" data-booking-open>Book Appointment</button>
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav" role="dialog" aria-label="Mobile Menu">
+    <div class="mobile-nav-links">
+      <a href="./index.html">Home</a>
+      <a href="./about.html">About</a>
+      <a href="./services.html">Services</a>
+      <a href="./gallery.html">Gallery</a>
+      <a href="./contact.html" class="active">Contact</a>
+    </div>
+    <div class="mobile-nav-footer">
+      <button class="btn btn-accent w-full" data-booking-open>Book Appointment</button>
+      <a href="https://wa.me/919999999999?text=Hi%20Lumi%C3%A8re%20Beauty%20Studio%2C%20I%20would%20like%20to%20book%20an%20appointment." class="btn btn-whatsapp w-full" data-whatsapp-btn>
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+      </a>
+    </div>
   </div>
-  <div class="mobile-overlay"></div>
+  <div class="mobile-overlay" id="mobileOverlay"></div>
 
-  <!-- PAGE HERO -->
-  <section class="page-hero">
-    <div class="container">
-      <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="index.html">Home</a><span>/</span>Contact
-      </nav>
-      <h1 class="mt-sm">Get in Touch</h1>
-      <p class="text-muted">We'd love to hear from you.</p>
-    </div>
-  </section>
+  <main id="mainContent">
+    <!-- ========================== PAGE HERO ========================== -->
+    <section class="page-hero" id="contactHero">
+      <div class="container">
+        <div class="page-hero-content">
+          <span class="eyebrow">GET IN TOUCH</span>
+          <h1>We’d Love to Hear From You</h1>
+          <p>Connect with our concierge team to schedule your session, discuss custom bridal arrangements, or visit our studio.</p>
+        </div>
+      </div>
+    </section>
 
-  <!-- CONTACT -->
-  <section class="section">
-    <div class="container">
-      <div class="contact-grid">
+    <!-- ========================== CONTACT CONTENT ========================== -->
+    <section class="section" id="contactSection">
+      <div class="container">
+        <div class="contact-grid">
+          
+          <!-- Contact Information & Map -->
+          <div class="contact-info-card">
+            <span class="eyebrow">STUDIO DETAILS</span>
+            <h2 style="font-size: 2rem; margin-bottom: 1.5rem;">Visit Lumière</h2>
 
-        <!-- INFO CARD -->
-        <div class="contact-info-card fade-in-up">
-          <h3>Visit Lumière</h3>
-
-          <div class="contact-info-item">
-            <span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span>
-            <div class="contact-detail">
-              <h4>Address</h4>
-              <p>123 Luxury Avenue,<br>New Delhi, 110001</p>
+            <div class="contact-info-block">
+              <h4>Studio Address</h4>
+              <p data-config-address>123 Luxury Avenue, Ground Floor, New Delhi, Delhi 110001, India</p>
             </div>
-          </div>
 
-          <div class="contact-info-item">
-            <span class="contact-icon"><i class="fas fa-phone"></i></span>
-            <div class="contact-detail">
-              <h4>Phone</h4>
-              <p>+91 99999 99999</p>
+            <div class="contact-info-block">
+              <h4>Direct Telephone</h4>
+              <p><a href="tel:+919999999999" data-config-phone>+91 99999 99999</a></p>
             </div>
-          </div>
 
-          <div class="contact-info-item">
-            <span class="contact-icon"><i class="fas fa-envelope"></i></span>
-            <div class="contact-detail">
-              <h4>Email</h4>
-              <p>hello@lumierebeautystudio.com</p>
+            <div class="contact-info-block">
+              <h4>Email Inquiries</h4>
+              <p><a href="mailto:hello@lumierebeautystudio.com" data-config-email>hello@lumierebeautystudio.com</a></p>
             </div>
-          </div>
 
-          <div class="contact-info-item">
-            <span class="contact-icon"><i class="fas fa-clock"></i></span>
-            <div class="contact-detail">
+            <div class="contact-info-block">
               <h4>Opening Hours</h4>
-              <p>Mon – Sat: 10:00 AM – 8:00 PM<br>Sunday: 11:00 AM – 6:00 PM</p>
+              <p>Monday – Saturday: 10:00 AM – 8:00 PM<br>Sunday: 11:00 AM – 6:00 PM</p>
+            </div>
+
+            <div class="contact-info-block" style="padding-top: 1rem; border-top: 1px solid var(--color-border-light);">
+              <h4>Direct WhatsApp Concierge</h4>
+              <a href="https://wa.me/919999999999?text=Hi%20Lumi%C3%A8re%20Beauty%20Studio%2C%20I%20would%20like%20to%20book%20an%20appointment." class="btn btn-whatsapp btn-sm" data-whatsapp-btn style="margin-top: 0.5rem;">
+                <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+              </a>
+            </div>
+
+            <!-- Embedded Google Map -->
+            <div class="map-container">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14008.114885827677!2d77.218536!3d28.632429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd37b8a7a919%3A0xda550882e70e9f13!2sConnaught%20Place%2C%20New%20Delhi%2C%20Delhi%20110001!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                title="Lumière Beauty Studio Map Location"
+                loading="lazy" 
+                allowfullscreen="">
+              </iframe>
             </div>
           </div>
 
-          <a href="#" class="btn btn-accent btn-block" data-whatsapp>
-            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
-          </a>
-        </div>
+          <!-- Contact Form -->
+          <div class="contact-form-wrap">
+            <span class="eyebrow">DIRECT INQUIRY</span>
+            <h2 style="font-size: 2rem; margin-bottom: 0.5rem;">Send a Message</h2>
+            <p style="margin-bottom: 2rem;">Have a specific query or pre-bridal inquiry? Complete the form below and we will get back to you within 24 hours.</p>
 
-        <!-- FORM -->
-        <div class="contact-form-wrap fade-in-up delay-1">
-          <h3 style="margin-bottom: var(--space-md);">Send Us a Message</h3>
+            <!-- Success State -->
+            <div class="form-success-banner" id="contactSuccessBanner" role="alert">
+              <div class="form-success-icon"><i class="fa-solid fa-circle-check"></i></div>
+              <h4 style="font-family: var(--font-heading); font-size: 1.4rem; margin-bottom: 0.35rem;">Message Dispatched</h4>
+              <p style="font-size: 0.9375rem;">Thank you! Your message has been sent successfully. Our team will review your inquiry and reach out shortly.</p>
+            </div>
 
-          <!-- SUCCESS MESSAGE -->
-          <div class="form-success-message">
-            <h4><i class="fas fa-check-circle"></i> Message Sent!</h4>
-            <p>Thank you for reaching out. This is a demo form — when you're ready, it can be connected to Formspree, Netlify Forms, a CRM, or a custom backend to receive real messages.</p>
+            <!-- 
+              NOTE FOR DEVELOPER:
+              This form is structured and styled ready for future integration with 
+              Formspree, Netlify Forms, EmailJS, or your custom CRM/backend API.
+            -->
+            <form id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="contactName">Your Name <span class="required">*</span></label>
+                <input type="text" id="contactName" class="form-control" placeholder="e.g. Ananya Sharma" required>
+                <span class="form-error">Please enter your name.</span>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contactEmail">Email Address <span class="required">*</span></label>
+                  <input type="email" id="contactEmail" class="form-control" placeholder="e.g. ananya@example.com" required>
+                  <span class="form-error">Please enter a valid email address.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contactPhone">Phone Number <span class="required">*</span></label>
+                  <input type="tel" id="contactPhone" class="form-control" placeholder="e.g. +91 99999 88888" required>
+                  <span class="form-error">Please enter your phone number.</span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contactService">Service of Interest</label>
+                  <select id="contactService" class="form-control">
+                    <option value="General Inquiry">General Inquiry</option>
+                    <option value="Hair Styling & Color">Hair Styling & Color</option>
+                    <option value="Skin & Facial Treatment">Skin & Facial Treatment</option>
+                    <option value="Bridal Consultation">Bespoke Bridal Consultation</option>
+                    <option value="Nail Art & Spa">Nail Art & Spa</option>
+                    <option value="Private Group Bookings">Private Group Bookings</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="contactDate">Estimated Date (Optional)</label>
+                  <input type="date" id="contactDate" class="form-control">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage">Your Message <span class="required">*</span></label>
+                <textarea id="contactMessage" class="form-control" rows="5" placeholder="Tell us how we can assist you..." required></textarea>
+                <span class="form-error">Please provide a brief message.</span>
+              </div>
+
+              <div style="margin-top: 2rem;">
+                <button type="submit" class="btn btn-primary btn-lg w-full" style="width: 100%;">Send Message</button>
+              </div>
+              <p class="form-notice">Frontend Demo: Forms validate instantly on the client side without fake background requests.</p>
+            </form>
           </div>
 
-          <form id="contact-form" novalidate>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="contact-name">Name <span class="required">*</span></label>
-                <input type="text" id="contact-name" name="name" required>
-                <span class="form-error">This field is required.</span>
-              </div>
-              <div class="form-group">
-                <label for="contact-email">Email <span class="required">*</span></label>
-                <input type="email" id="contact-email" name="email" required>
-                <span class="form-error">This field is required.</span>
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="contact-phone">Phone <span class="required">*</span></label>
-                <input type="tel" id="contact-phone" name="phone" required>
-                <span class="form-error">This field is required.</span>
-              </div>
-              <div class="form-group">
-                <label for="contact-service">Service</label>
-                <select id="contact-service" name="service">
-                  <option value="">Select a service</option>
-                  <option value="Hair Styling">Hair Styling</option>
-                  <option value="Hair Color">Hair Color</option>
-                  <option value="Skin & Facial">Skin & Facial</option>
-                  <option value="Bridal Beauty">Bridal Beauty</option>
-                  <option value="Manicure & Pedicure">Manicure & Pedicure</option>
-                  <option value="Makeup">Makeup</option>
-                  <option value="Consultation">Consultation</option>
-                  <option value="Other">Other</option>
-                </select>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="contact-date">Preferred Date</label>
-              <input type="date" id="contact-date" name="date">
-            </div>
-            <div class="form-group">
-              <label for="contact-message">Message <span class="required">*</span></label>
-              <textarea id="contact-message" name="message" required placeholder="Tell us how we can help you..."></textarea>
-              <span class="form-error">This field is required.</span>
-            </div>
-            <button type="submit" class="btn btn-primary btn-block btn-lg">Send Message</button>
-          </form>
-        </div>
-
-      </div>
-
-      <!-- MAP -->
-      <div class="map-placeholder fade-in-up">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.073!2d77.2090!3d28.6139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b34e5e9a7%3A0x1b1e1e1e1e1e1e1e!2sNew%20Delhi!5e0!3m2!1sen!2sin!4v1700000000000"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          title="Lumière Beauty Studio location map">
-        </iframe>
-      </div>
-    </div>
-  </section>
-
-  <!-- BOOKING CTA -->
-  <section class="booking-cta">
-    <div class="container">
-      <div class="fade-in-up">
-        <span class="eyebrow">Book Your Visit</span>
-        <h2>Ready for Your Next Beauty Moment?</h2>
-        <p>Book your appointment and let us take care of the rest.</p>
-        <div class="booking-cta-actions">
-          <button class="btn btn-primary btn-lg" data-booking-open>Book Appointment</button>
-          <a href="#" class="btn btn-outline btn-lg" data-whatsapp><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FOOTER -->
-  <footer class="site-footer" role="contentinfo">
+    <!-- ========================== FINAL CTA ========================== -->
+    <section class="final-cta">
+      <div class="container">
+        <div class="final-cta-content">
+          <span class="eyebrow">RESERVE YOUR APPOINTMENT</span>
+          <h2>Ready for Your Next Beauty Moment?</h2>
+          <p>Book your appointment and let us take care of the rest. Experience individualized luxury crafted for your confidence.</p>
+          <div class="final-cta-actions">
+            <button class="btn btn-accent btn-lg" data-booking-open>Book Appointment</button>
+            <a href="https://wa.me/919999999999?text=Hi%20Lumi%C3%A8re%20Beauty%20Studio%2C%20I%20would%20like%20to%20book%20an%20appointment." class="btn btn-whatsapp btn-lg" data-whatsapp-btn>
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================== FOOTER ========================== -->
+  <footer class="site-footer" id="siteFooter" role="contentinfo">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="index.html" class="site-logo">
+          <a href="./index.html" class="site-logo" aria-label="Lumière Beauty Studio">
             <span class="logo-mark">L</span>
             <span class="logo-text">
-              <span>Lumière</span>
-              <span>Beauty Studio</span>
+              <span class="logo-title">Lumière</span>
+              <span class="logo-subtitle">Beauty Studio</span>
             </span>
           </a>
-          <p>Where Beauty Meets Confidence. Premium hair, skin, and beauty experiences designed around you.</p>
-          <div class="footer-social">
-            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <p class="footer-desc" data-config-text="shortDescription">Where Beauty Meets Confidence. Premium hair, skin, and beauty experiences designed around you.</p>
+          <div class="footer-social-links">
+            <a href="https://instagram.com/lumierebeautystudio" data-social="instagram" class="footer-social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://facebook.com/lumierebeautystudio" data-social="facebook" class="footer-social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://youtube.com/@lumierebeautystudio" data-social="youtube" class="footer-social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
           </div>
         </div>
+
         <div class="footer-col">
           <h4>Quick Links</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
+          <ul class="footer-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./contact.html">Contact</a></li>
           </ul>
         </div>
+
         <div class="footer-col">
           <h4>Services</h4>
-          <ul>
-            <li><a href="services.html">Hair</a></li>
-            <li><a href="services.html">Skin</a></li>
-            <li><a href="services.html">Makeup</a></li>
-            <li><a href="services.html">Bridal</a></li>
-            <li><a href="services.html">Nails</a></li>
+          <ul class="footer-links">
+            <li><a href="./services.html#hair">Hair</a></li>
+            <li><a href="./services.html#skin">Skin</a></li>
+            <li><a href="./services.html#makeup">Makeup</a></li>
+            <li><a href="./services.html#bridal">Bridal</a></li>
+            <li><a href="./services.html#nails">Nails</a></li>
           </ul>
         </div>
+
         <div class="footer-col">
-          <h4>Contact</h4>
-          <div class="footer-contact-item">
-            <span class="contact-label">Address</span>
-            <span class="contact-value">123 Luxury Avenue, New Delhi</span>
-          </div>
-          <div class="footer-contact-item">
-            <span class="contact-label">Phone</span>
-            <span class="contact-value">+91 99999 99999</span>
-          </div>
-          <div class="footer-contact-item">
-            <span class="contact-label">Email</span>
-            <span class="contact-value">hello@lumierebeautystudio.com</span>
-          </div>
-          <div class="footer-contact-item">
-            <span class="contact-label">Hours</span>
-            <span class="contact-value">Mon–Sat: 10:00 AM – 8:00 PM<br>Sunday: 11:00 AM – 6:00 PM</span>
+          <h4>Contact Us</h4>
+          <div class="footer-contact-info">
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span data-config-address>123 Luxury Avenue, Ground Floor, New Delhi, Delhi 110001, India</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+919999999999" data-config-phone>+91 99999 99999</a>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:hello@lumierebeautystudio.com" data-config-email>hello@lumierebeautystudio.com</a>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-clock"></i>
+              <span>Mon–Sat: 10:00 AM – 8:00 PM<br>Sunday: 11:00 AM – 6:00 PM</span>
+            </div>
           </div>
         </div>
       </div>
+
       <div class="footer-bottom">
-        <p>&copy; 2026 Lumière Beauty Studio. All Rights Reserved.</p>
+        <p>&copy; <span data-year>2026</span> Lumière Beauty Studio. All Rights Reserved.</p>
+        <p>Where Beauty Meets Confidence.</p>
       </div>
     </div>
   </footer>
 
-  <!-- BACK TO TOP -->
-  <button class="back-to-top" aria-label="Back to top">
-    <i class="fas fa-arrow-up"></i>
-  </button>
-
-  <!-- BOOKING MODAL -->
-  <div id="booking-modal" class="modal-overlay" role="dialog" aria-labelledby="booking-title" aria-modal="true">
-    <div class="modal">
+  <!-- ========================== APPOINTMENT BOOKING MODAL ========================== -->
+  <div class="modal-backdrop" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" aria-label="Close booking modal">&times;</button>
       <div class="modal-header">
-        <h3 id="booking-title">Book an Appointment</h3>
-        <button class="modal-close" aria-label="Close">&times;</button>
+        <span class="eyebrow">RESERVE A SPOT</span>
+        <h3 id="modalTitle">Book an Appointment</h3>
+        <p>Fill out the form below and our studio team will confirm your preferred session.</p>
       </div>
-      <div class="modal-body">
-        <form id="booking-form" novalidate>
+
+      <div class="form-success-banner" role="alert">
+        <div class="form-success-icon"><i class="fa-solid fa-circle-check"></i></div>
+        <h4 style="font-family: var(--font-heading); font-size: 1.4rem; margin-bottom: 0.35rem;">Request Received</h4>
+        <p style="font-size: 0.9375rem;">Thank you! Your appointment request has been submitted. We will contact you shortly to confirm your booking.</p>
+      </div>
+
+      <form id="bookingForm" novalidate>
+        <div class="form-group">
+          <label for="modalName">Full Name <span class="required">*</span></label>
+          <input type="text" id="modalName" class="form-control" placeholder="e.g. Priya Sen" required>
+          <span class="form-error">Please enter your full name.</span>
+        </div>
+
+        <div class="form-group">
+          <label for="modalPhone">Phone Number <span class="required">*</span></label>
+          <input type="tel" id="modalPhone" class="form-control" placeholder="e.g. +91 98765 43210" required>
+          <span class="form-error">Please enter a valid contact number.</span>
+        </div>
+
+        <div class="form-group">
+          <label for="modalService">Select Service <span class="required">*</span></label>
+          <select id="modalService" class="form-control" required>
+            <option value="">-- Choose a Service --</option>
+            <option value="Haircut & Styling">Hair Styling & Cut</option>
+            <option value="Hair Color">Hair Color & Balayage</option>
+            <option value="Skin & Facial">Skin & Facial Ritual</option>
+            <option value="Bridal Beauty">Bridal Beauty Experience</option>
+            <option value="Manicure & Pedicure">Manicure & Pedicure</option>
+            <option value="Makeup">Occasion / Party Makeup</option>
+            <option value="Consultation">Personalized Beauty Consultation</option>
+          </select>
+          <span class="form-error">Please select a service.</span>
+        </div>
+
+        <div class="form-row">
           <div class="form-group">
-            <label for="booking-name">Full Name <span class="required">*</span></label>
-            <input type="text" id="booking-name" name="name" required>
-            <span class="form-error">This field is required.</span>
+            <label for="modalDate">Preferred Date <span class="required">*</span></label>
+            <input type="date" id="modalDate" class="form-control" required>
+            <span class="form-error">Please select a date.</span>
           </div>
+
           <div class="form-group">
-            <label for="booking-phone">Phone Number <span class="required">*</span></label>
-            <input type="tel" id="booking-phone" name="phone" required>
-            <span class="form-error">This field is required.</span>
-          </div>
-          <div class="form-group">
-            <label for="booking-service">Service <span class="required">*</span></label>
-            <select id="booking-service" name="service" required>
-              <option value="">Select a service</option>
-              <option value="Hair Styling">Hair Styling</option>
-              <option value="Hair Color">Hair Color</option>
-              <option value="Skin & Facial">Skin & Facial</option>
-              <option value="Bridal Beauty">Bridal Beauty</option>
-              <option value="Manicure & Pedicure">Manicure & Pedicure</option>
-              <option value="Makeup">Makeup</option>
-              <option value="Consultation">Consultation</option>
+            <label for="modalTime">Preferred Time</label>
+            <select id="modalTime" class="form-control">
+              <option value="Morning">Morning (10:00 AM – 1:00 PM)</option>
+              <option value="Afternoon">Afternoon (1:00 PM – 4:00 PM)</option>
+              <option value="Evening">Evening (4:00 PM – 8:00 PM)</option>
             </select>
-            <span class="form-error">This field is required.</span>
           </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="booking-date">Preferred Date <span class="required">*</span></label>
-              <input type="date" id="booking-date" name="date" required>
-              <span class="form-error">This field is required.</span>
-            </div>
-            <div class="form-group">
-              <label for="booking-time">Preferred Time <span class="required">*</span></label>
-              <input type="time" id="booking-time" name="time" required>
-              <span class="form-error">This field is required.</span>
-            </div>
-          </div>
-          <button type="submit" class="btn btn-primary btn-block btn-lg">Submit Request</button>
-        </form>
-      </div>
-      <div class="modal-success">
-        <div class="success-icon"><i class="fas fa-check"></i></div>
-        <h4>Thank You!</h4>
-        <p>Your appointment request has been received. We'll contact you shortly to confirm your booking.</p>
-        <button class="btn btn-accent modal-success-close">Close</button>
-      </div>
+        </div>
+
+        <div style="margin-top: 1.5rem;">
+          <button type="submit" class="btn btn-accent btn-lg w-full" style="width: 100%;">Submit Request</button>
+        </div>
+        <p class="form-notice">Frontend Demo: In a live setup, this submits directly to your booking engine or WhatsApp.</p>
+      </form>
     </div>
   </div>
 
-  <script src="js/script.js"></script>
+  <script src="./js/config.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>
