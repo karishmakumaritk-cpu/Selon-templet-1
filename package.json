@@ -1,0 +1,17 @@
+{
+  "name": "lumiere-beauty-studio",
+  "version": "1.0.0",
+  "description": "Premium salon website template built with HTML, CSS, and vanilla JavaScript",
+  "scripts": {
+    "dev": "npx serve .",
+    "start": "npx serve .",
+    "build": "mkdir -p dist && cp -r *.html css js assets dist/ 2>/dev/null; cp README.md dist/ 2>/dev/null; echo 'Build complete'"
+  },
+  "keywords": [
+    "salon",
+    "beauty",
+    "template",
+    "static-site"
+  ],
+  "license": "MIT"
+}
